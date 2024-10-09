@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="問題：paiza | S062:パズルの手助けパイザさんはハノイの塔というパズルで遊んでみることにしました。このパズルには、N 枚の円盤と 3 つの杭が刺さっているプレートを用います。 N 枚の円盤をそれぞれ円盤 1、円盤 2、……、円盤 N と呼ぶことにします。これらの円盤の大きさはそれぞれ相異なり、小さい順に番号が付いています。 プレートに刺さっている 3 つの杭を、左から順に杭 A、杭 B、">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ハノイの塔">
+<meta property="og:url" content="http://example.com/2024/10/09/%E3%83%8F%E3%83%8E%E3%82%A4%E3%81%AE%E5%A1%94/index.html">
+<meta property="og:site_name" content="ムのブログ">
+<meta property="og:description" content="問題：paiza | S062:パズルの手助けパイザさんはハノイの塔というパズルで遊んでみることにしました。このパズルには、N 枚の円盤と 3 つの杭が刺さっているプレートを用います。 N 枚の円盤をそれぞれ円盤 1、円盤 2、……、円盤 N と呼ぶことにします。これらの円盤の大きさはそれぞれ相異なり、小さい順に番号が付いています。 プレートに刺さっている 3 つの杭を、左から順に杭 A、杭 B、">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://paiza.s3.amazonaws.com/problem/img/708/img.png">
+<meta property="og:image" content="http://paiza.s3.amazonaws.com/problem/img/708/img2.png">
+<meta property="og:image" content="http://paiza.s3.amazonaws.com/problem/img/708/img3.png">
+<meta property="article:published_time" content="2024-10-09T11:41:21.000Z">
+<meta property="article:modified_time" content="2024-10-09T12:22:11.069Z">
+<meta property="article:author" content="ム">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://paiza.s3.amazonaws.com/problem/img/708/img.png">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>ハノイの塔</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/2024/09/21/hello-world/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2024/10/09/%E3%83%8F%E3%83%8E%E3%82%A4%E3%81%AE%E5%A1%94/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2024/10/09/%E3%83%8F%E3%83%8E%E3%82%A4%E3%81%AE%E5%A1%94/&text=ハノイの塔"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2024/10/09/%E3%83%8F%E3%83%8E%E3%82%A4%E3%81%AE%E5%A1%94/&title=ハノイの塔"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2024/10/09/%E3%83%8F%E3%83%8E%E3%82%A4%E3%81%AE%E5%A1%94/&is_video=false&description=ハノイの塔"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=ハノイの塔&body=Check out this article: http://example.com/2024/10/09/%E3%83%8F%E3%83%8E%E3%82%A4%E3%81%AE%E5%A1%94/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2024/10/09/%E3%83%8F%E3%83%8E%E3%82%A4%E3%81%AE%E5%A1%94/&title=ハノイの塔"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2024/10/09/%E3%83%8F%E3%83%8E%E3%82%A4%E3%81%AE%E5%A1%94/&title=ハノイの塔"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2024/10/09/%E3%83%8F%E3%83%8E%E3%82%A4%E3%81%AE%E5%A1%94/&title=ハノイの塔"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2024/10/09/%E3%83%8F%E3%83%8E%E3%82%A4%E3%81%AE%E5%A1%94/&title=ハノイの塔"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2024/10/09/%E3%83%8F%E3%83%8E%E3%82%A4%E3%81%AE%E5%A1%94/&name=ハノイの塔&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2024/10/09/%E3%83%8F%E3%83%8E%E3%82%A4%E3%81%AE%E5%A1%94/&t=ハノイの塔"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%95%8F%E9%A1%8C%EF%BC%9Apaiza-S062-%E3%83%91%E3%82%BA%E3%83%AB%E3%81%AE%E6%89%8B%E5%8A%A9%E3%81%91"><span class="toc-number">1.</span> <span class="toc-text">問題：paiza | S062:パズルの手助け</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E6%B1%BA"><span class="toc-number">2.</span> <span class="toc-text">解決</span></a></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        ハノイの塔
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">ム</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2024-10-09T11:41:21.000Z" class="dt-published" itemprop="datePublished">2024-10-09</time>
+        
+      
+    </div>
+
+
+      
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <h2 id="問題：paiza-S062-パズルの手助け"><a href="#問題：paiza-S062-パズルの手助け" class="headerlink" title="問題：paiza | S062:パズルの手助け"></a>問題：paiza | S062:パズルの手助け</h2><p>パイザさんはハノイの塔というパズルで遊んでみることにしました。このパズルには、N 枚の円盤と 3 つの杭が刺さっているプレートを用います。</p>
+<p>N 枚の円盤をそれぞれ円盤 1、円盤 2、……、円盤 N と呼ぶことにします。これらの円盤の大きさはそれぞれ相異なり、小さい順に番号が付いています。</p>
+<p>プレートに刺さっている 3 つの杭を、左から順に杭 A、杭 B、杭 C と呼ぶことにします。このとき、ハノイの塔は以下のルールで遊ぶパズルです。</p>
+<p>・はじめに、杭 A に円盤を下から大きい順に N 個重ねておく。<br>・円盤を 1 枚ずつ動かし、最終的に杭 C に円盤を下から大きい順に N 個重ねることを目指す。<br>・ただし、円盤を移動するときは、以下の条件のいずれかが成り立っていないといけない。<br>　・移動先の杭に円盤が 1 枚も置かれていない。<br>　・移動先の杭にすでに置かれている円盤の大きさよりも、移動させようとしている円盤の大きさの方が小さい。</p>
+<p>たとえば、 3 つの円盤を使ってハノイの塔を遊ぶ場合、次の図のように動かすと、7 回円盤を移動させることですべての円盤を杭 C に移動させることが出来ます。<br><img src="http://paiza.s3.amazonaws.com/problem/img/708/img.png"><br>パイザさんはしばらくハノイの塔で遊んでいたのですが、どうにもうまく杭 C にすべての円盤を移動させることが出来ません。そこで、あなたは自分の現在の盤面の様子を入力すると、そこから最短で何回円盤を移動させることでで杭 C にすべての円盤を移動させることができるかを求めるプログラムをパイザさんのために作ってあげることにしました。</p>
+<p>パイザさんの遊んでいたハノイの塔の円盤の枚数と、それぞれの円盤がどの杭に置かれているかという情報が与えられたとき、その状態から杭 C にすべての円盤を移動させるために必要な円盤の移動回数の最小値を求めるプログラムを作成してください。</p>
+<p>たとえば、入力例 1 の場合、パイザさんは 5 枚の円盤を用いてハノイの塔をプレイしており、現在の盤面では、<br>・円盤 1 が杭 B に、<br>・円盤 2 が杭 B に、<br>・円盤 3 が杭 A に、<br>・円盤 4 が杭 C に、<br>・円盤 5 が杭 C に</p>
+<p>あります。<br><img src="http://paiza.s3.amazonaws.com/problem/img/708/img2.png"><br>次の図の手順で円盤を移動させていくことで、この状態から 4 回の円盤の移動ですべての円盤を杭 C に移動させることができます。移動回数 3 回以下ですべての円盤を杭 C に移動させることは出来ないため、この場合は 4 と出力します。<br><img src="http://paiza.s3.amazonaws.com/problem/img/708/img3.png"></p>
+<p>入力される値<br>入力は次のフォーマットで与えられます。<br>N<br>c_1<br>c_2<br>…<br>c_N</p>
+<p>・1 行目に、ハノイの塔に使われている円盤の枚数を表す整数 N が与えられます。<br>・続く N 行のうちの i 行目 (1 ≦ i ≦ N) には、i 番目の円盤がどの杭にあるのかを表す文字 c_i が与えられます。</p>
+<p>文字列は標準入力から渡されます。標準入力からの値取得方法はこちらをご確認ください<br>期待する出力<br>杭 C にすべての円盤を移動させるために必要な円盤の移動回数の最小値を出力してください。<br>末尾に改行を入れ、余計な文字、空行を含んではいけません。<br>条件<br>すべてのテストケースにおいて、以下の条件をみたします。<br>・1 ≦ N ≦ 50<br>・c_i は “A”, “B”, “C” のいずれかの文字 (1 ≦ i ≦ N)<br>・入力で与えられる盤面は、ハノイの塔のルールに違反していない</p>
+<p>言語別実行時間制限の詳細は こちら をご確認ください。<br>入力例1<br>5<br>B<br>B<br>A<br>C<br>C<br>出力例1<br>4<br>入力例2<br>12<br>A<br>B<br>C<br>A<br>C<br>B<br>A<br>C<br>B<br>B<br>A<br>A<br>出力例2<br>3925</p>
+<h2 id="解決"><a href="#解決" class="headerlink" title="解決"></a>解決</h2><p>どちらかというと、この問題は<strong>分割統治法</strong>で解決されました。<br>具体的な考え方はソースコードのコメントのように書いてあります。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> <span class="variable">A_MARK</span> <span class="operator">=</span> <span class="number">1</span> &lt;&lt; <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> <span class="variable">B_MARK</span> <span class="operator">=</span> <span class="number">1</span> &lt;&lt; <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> <span class="variable">C_MARK</span> <span class="operator">=</span> <span class="number">1</span> &lt;&lt; <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> <span class="variable">FULL_MARK</span> <span class="operator">=</span> A_MARK | B_MARK | C_MARK;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> <span class="variable">MAX_N</span> <span class="operator">=</span> <span class="number">50</span> + <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">static</span> <span class="type">long</span> dp[] = <span class="keyword">new</span> <span class="title class_">long</span>[MAX_N];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">static</span> <span class="type">long</span> <span class="title function_">proc</span><span class="params">(List&lt;Integer&gt; list, <span class="type">int</span> N, <span class="type">int</span> target)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">posOfBiggest</span> <span class="operator">=</span> list.get(N - <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//再帰の終わりの場合</span></span><br><span class="line">        <span class="keyword">if</span> (N == <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (posOfBiggest == target) &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//もし最大の円盤が正しい位置に置かれていたら、</span></span><br><span class="line">        <span class="keyword">if</span> (posOfBiggest == target) &#123;</span><br><span class="line">            <span class="keyword">return</span> proc(list, N - <span class="number">1</span>, target);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="type">int</span> <span class="variable">newTarget</span> <span class="operator">=</span> FULL_MARK - posOfBiggest - target;</span><br><span class="line">        <span class="comment">//余った円盤を新しい位置に移動させる</span></span><br><span class="line">        <span class="type">long</span> <span class="variable">ret</span> <span class="operator">=</span> proc(list, N - <span class="number">1</span>, newTarget);</span><br><span class="line">        <span class="comment">//最大の円盤は目標の位置に移動すると、１ステップが掛かります</span></span><br><span class="line">        <span class="comment">//そして、最大の円盤を除いた他の円盤は、新しい位置から目標の位置に移動するのに、dp[N - 1]ステップが掛かります。</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span> + ret + dp[N - <span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">int</span> <span class="variable">N</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line"></span><br><span class="line">        List&lt;Integer&gt; lists = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">        sc.nextLine();</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; N; i++) &#123;</span><br><span class="line">            <span class="type">String</span> <span class="variable">pos</span> <span class="operator">=</span> sc.nextLine();</span><br><span class="line">            lists.add(<span class="number">1</span> &lt;&lt; (pos.charAt(<span class="number">0</span>) - <span class="string">&#x27;A&#x27;</span>));</span><br><span class="line">        &#125;</span><br><span class="line">        dp[<span class="number">1</span>] = <span class="number">1L</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">2</span>; i &lt; MAX_N; i++) &#123;</span><br><span class="line">            dp[i] = <span class="number">1</span> + (<span class="number">2</span> * dp[i - <span class="number">1</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">long</span> <span class="variable">ret</span> <span class="operator">=</span> proc(lists, N, C_MARK);</span><br><span class="line">        System.out.println(ret);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/about/">About</a></li>
+        
+          <li><a href="/archives/">Writing</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%95%8F%E9%A1%8C%EF%BC%9Apaiza-S062-%E3%83%91%E3%82%BA%E3%83%AB%E3%81%AE%E6%89%8B%E5%8A%A9%E3%81%91"><span class="toc-number">1.</span> <span class="toc-text">問題：paiza | S062:パズルの手助け</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E6%B1%BA"><span class="toc-number">2.</span> <span class="toc-text">解決</span></a></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2024/10/09/%E3%83%8F%E3%83%8E%E3%82%A4%E3%81%AE%E5%A1%94/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2024/10/09/%E3%83%8F%E3%83%8E%E3%82%A4%E3%81%AE%E5%A1%94/&text=ハノイの塔"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2024/10/09/%E3%83%8F%E3%83%8E%E3%82%A4%E3%81%AE%E5%A1%94/&title=ハノイの塔"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2024/10/09/%E3%83%8F%E3%83%8E%E3%82%A4%E3%81%AE%E5%A1%94/&is_video=false&description=ハノイの塔"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=ハノイの塔&body=Check out this article: http://example.com/2024/10/09/%E3%83%8F%E3%83%8E%E3%82%A4%E3%81%AE%E5%A1%94/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2024/10/09/%E3%83%8F%E3%83%8E%E3%82%A4%E3%81%AE%E5%A1%94/&title=ハノイの塔"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2024/10/09/%E3%83%8F%E3%83%8E%E3%82%A4%E3%81%AE%E5%A1%94/&title=ハノイの塔"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2024/10/09/%E3%83%8F%E3%83%8E%E3%82%A4%E3%81%AE%E5%A1%94/&title=ハノイの塔"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2024/10/09/%E3%83%8F%E3%83%8E%E3%82%A4%E3%81%AE%E5%A1%94/&title=ハノイの塔"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2024/10/09/%E3%83%8F%E3%83%8E%E3%82%A4%E3%81%AE%E5%A1%94/&name=ハノイの塔&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2024/10/09/%E3%83%8F%E3%83%8E%E3%82%A4%E3%81%AE%E5%A1%94/&t=ハノイの塔"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2024
+    ム
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
